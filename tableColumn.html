@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="basic.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <input
+        type="checkbox"
+        id="address_check"
+        onclick="checkbox_cell(this,'address_display')"
+        checked="checked"
+      />住所
+      <input
+        type="checkbox"
+        id="age_check"
+        onclick="checkbox_cell(this,'age_display')"
+        checked="checked"
+      />年齢
+      <table>
+        <tr>
+          <th>氏名</th>
+          <th id="address_display">住所</th>
+          <th id="age_display">年齢</th>
+        </tr>
+        <tr>
+          <td>山田</td>
+          <td>東京</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>佐藤</td>
+          <td>神奈川</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>渡辺</td>
+          <td>大阪</td>
+          <td>18</td>
+        </tr>
+      </table>
+    </body>
+  </body>
+</html>

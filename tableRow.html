@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="table.css" />
+    <script type="text/javascript" src="./scriptRow.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <input type="checkbox" id="address_check" onclick="checkbox_row(this, 'row1')" 
+       checked="checked" />表示・非表示1
+       <input type="checkbox" id="address_check" onclick="checkbox_row(this, 'row2')" 
+       checked="checked" />表示・非表示2
+       <input type="checkbox" id="address_check" onclick="checkbox_row(this, 'row3')" 
+       checked="checked" />表示・非表示3
+      <table>
+        <tr >
+          <th>項目名</th>
+          <th>日程</th>
+          <th>スケジュール</th>
+        </tr>
+        <tr name="row1">
+          <td>準備</td>
+          <td>開始日</td>
+          <td>2021/03/01</td>
+        </tr>
+        <tr name="row2">
+          <td rowspan="2">参画</td>
+          <td>開始日</td>
+          <td>2021/03/03</td>
+        </tr>
+        <tr name="row2">
+          <td>終了日</td>
+          <td>2021/03/10</td>
+        </tr>
+        <tr name="row3">
+          <td rowspan="2">開札</td>
+          <td>開始日</td>
+          <td>2021/03/15</td>
+        </tr>
+        <tr name="row3">
+          <td>終了日</td>
+          <td>2021/04/10</td>
+        </tr>
+        <tr name="row4">
+          <td>決定</td>
+          <td>決定日</td>
+          <td>2021/04/15</td>
+        </tr>
+      </table>
+    </body>
+  </body>
+</html>
